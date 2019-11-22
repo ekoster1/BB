@@ -5,8 +5,8 @@ import {Actions} from 'react-native-router-flux';
 
 export default class WatchVideo extends Component<{}> {
   
-  home(){
-    Actions.home();
+  playlist(){
+    Actions.playlist();
   }
 
   videos(){
