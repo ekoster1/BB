@@ -6,7 +6,7 @@ const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
 const API_KEY = "API_KEY_placeholder";
 
-export default class Home extends Component<{}> {
+export default class Playlist extends Component<{}> {
   
   home(){
     Actions.home();
@@ -63,10 +63,10 @@ export default class Home extends Component<{}> {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: '#CCCCFF'
   },
   demacate: {
-    borderBottomColor: '#a7b3e3',
+    borderBottomColor: '#F1E7E5',
     borderBottomWidth: 2,
     borderRadius:10
   },
