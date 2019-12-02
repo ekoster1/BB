@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import {Actions} from 'react-native-router-flux';
+import {styles} from '../Styles';
 
 export default class WatchVideo extends Component<{}> {
   
@@ -19,7 +20,7 @@ export default class WatchVideo extends Component<{}> {
   }
   render() {
     return (
-      <SafeAreaView style={styles.safeArea}>
+      <SafeAreaView style={styles.videoSafeArea}>
           {
             <WebView
               source={{ uri: "https://www.youtube.com/embed/"+this.props.video_url}}
@@ -30,10 +31,3 @@ export default class WatchVideo extends Component<{}> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#fff'
-  }
-});
