@@ -10,7 +10,7 @@ export default class Home extends Component {
                 <Image source={{uri: 'COMP322logo.png'}} style={styles.image} />
                 <TouchableOpacity
                 style={styles.button}
-                onPress={() => Actions.CategoriesPage()}
+                onPress={() => Actions.categories()}
                 >
                 <Text style={styles.text}>See Categories</Text>
                 </TouchableOpacity>
