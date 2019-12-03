@@ -5,7 +5,7 @@ import {Platform} from 'react-native';
 import {Router, Stack, Scene} from 'react-native-router-flux';
 
 // import our screens as components
-import Home from './screens/Home';
+import Home from './screens/home';
 import WatchVideo from './screens/Video';
 
 export default class Routes extends Component<{}> {
