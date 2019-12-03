@@ -6,13 +6,15 @@ import {styles} from '../Styles';
 export default class Home extends Component {
   render(){
     return (
-      <Image source={{uri: 'COMP322logo.png'}} style={{width: 40, height: 40}} />
-      <TouchableOpacity 
-            style={styles.button}
-            onPress={() => Actions.CategoriesPage()}
-            >
-              <Text style={styles.text}>See Categories</Text>
-          </TouchableOpacity>
+        <View>
+            <Image source={{uri: 'COMP322logo.png'}} style={{width: 40, height: 40}} />
+            <TouchableOpacity 
+                style={styles.button}
+                onPress={() => Actions.CategoriesPage()}
+                >
+                <Text style={styles.text}>See Categories</Text>
+            </TouchableOpacity>
+        </View>
     );
   }
 };
@@ -34,4 +36,5 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     alignItems: "center",
     justifyContent: "center"
-}
+  }
+});
