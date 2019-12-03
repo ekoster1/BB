@@ -7,7 +7,7 @@ const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
 const API_KEY = "API_KEY_placeholder";
 
-export default class Playlist extends Component<{}> {
+export default class Playlist extends Component {
   
   playlist(){
     Actions.playlist();
