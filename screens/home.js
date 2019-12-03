@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { StyleSheet, Text, View, ScrollView, Header, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, Image, View, ScrollView, Header, TouchableOpacity } from 'react-native';
 
 <Image source={{uri: 'COMP322logo.png'}} style={{width: 40, height: 40}} />
 
