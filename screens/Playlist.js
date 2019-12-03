@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, FlatList, Text, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
 
 const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
