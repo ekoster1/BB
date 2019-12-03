@@ -10,7 +10,7 @@ export default class Home extends Component {
       <TouchableOpacity 
             style={styles.button}
             onPress={() => Actions.CategoriesPage()}
-            />
+            >
               <Text style={styles.text}>See Categories</Text>
           </TouchableOpacity>
     );
