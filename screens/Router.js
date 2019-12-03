@@ -16,14 +16,14 @@ const App = () => (
     <Router>
         <Scene key="root">
             <Scene key="home" component={Home} title="Home" initial/>
-            <Scene key="login" component={LoginPage} title="Login"/>
-            <Scene key="playlist" component={Playlist} title="Playlist"/>
-            <Scene key="video" component={WatchVideo} title="Video Player"/>
+            <Scene key="categories" component={CategoriesPage} title="Facial Categories"/>
             <Scene key="EyeShape" component={EyeShape} title="Eye Shape"/>
             <Scene key="FaceShape" component={FaceShape} title="Face Shape"/>
             <Scene key="SkinTone" component={SkinTone} title="Skin Tone"/>
             <Scene key="SkinType" component={SkinType} title="Skin Type"/>
-            <Scene key="categories" component={CategoriesPage} title="Facial Categories"/>
+            <Scene key="playlist" component={Playlist} title="Playlist"/>
+            <Scene key="video" component={WatchVideo} title="Video Player"/>
+            <Scene key="login" component={LoginPage} title="Login"/>
         </Scene>
     </Router>
 )
