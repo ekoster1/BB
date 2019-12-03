@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Text, View, Image, ScrollView, Header, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
 
 export default class Home extends Component {
     render(){
