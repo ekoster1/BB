@@ -10,9 +10,9 @@ export default class Home extends Component {
                 <View style={styles.container}>
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
                     <Text style={styles.text}>Login</Text>
-                    <TextInput style={{height: 40, borderBottomColor: '#6666FC', borderBottomWidth: 1}} 
+                    <TextInput style={styles.textInput} 
                         placeholder="Username" />
-                    <TextInput placeholder="Password"/>
+                    <TextInput style={styles.textInput} placeholder="Password"/>
                     <TouchableOpacity
                     style={styles.button}
                     onPress={() => Actions.categories()}

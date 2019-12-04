@@ -36,7 +36,10 @@ const styles = StyleSheet.create({
         
     },
     textInput: {
-        width: 300,
+        height: 40, 
+        borderBottomColor: 'white', 
+        borderBottomWidth: 1, 
+        borderBottomWidth: 150
     },
     image: {
         width: 300,
