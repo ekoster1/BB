@@ -1,4 +1,4 @@
-import { StyleSheet} from 'react-native';
+import { StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         borderColor: "#6666FC",
         borderWidth: 1,
         alignItems:'center',
-                                 color: '#FFF',
+                                 color: '#FFFF',
     },
     text:{
         color:"#6666FC",
@@ -88,8 +88,8 @@ const styles = StyleSheet.create({
         borderRadius:10
     },
     item: {
-        padding: 10,
-        fontSize: 18,
+        padding: 20,
+        fontSize: Dimensions.get('window').width * .05,
         height: 44,
                                  color: '#FFF',
     },
