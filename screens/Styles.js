@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#CCCCFF',
+      alignItems: 'center',
       justifyContent: 'center',
     },
     button:{
@@ -14,6 +15,7 @@ const styles = StyleSheet.create({
       width: 350,
       borderColor: "#FEBA95",
       borderWidth: 2,
+      alignItems: "center",
       justifyContent: "center",
     },
     text:{
@@ -25,6 +27,7 @@ const styles = StyleSheet.create({
         height: 300, 
         margin: 10,
         marginTop: 0,
+        alignItems: "center",
         justifyContent: "center",
     },
     safeArea: {
