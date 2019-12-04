@@ -46,7 +46,7 @@ export default class Playlist extends Component {
                 ({item}) =>
                 <TouchableOpacity
                     style={styles.demacate}
-                    onPress={() => this.watchVideo(item.contentDetails.videoId)}
+                    onPress={() => this.video(item.contentDetails.videoId)}
                 >
                 <Text
                   style={styles.item}
