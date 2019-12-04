@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
       justifyContent: "center",
     },
     facialButton:{
+        flexDirection: 'row',
         margin:20,
         padding:10,
         backgroundColor:"#CCCCFF",
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
         width: 300,
     },
     image: {
-        width: 100,
+        width: 300,
         height: 100, 
         margin: 10,
         marginTop: 0,
