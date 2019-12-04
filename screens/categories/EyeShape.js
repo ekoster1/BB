@@ -10,21 +10,21 @@ export default class EyeShape extends Component {
         <ScrollView>
           <View></View>
           <TouchableOpacity 
-            style={styles.button}
+            style={styles.facialButton}
             onPress={() => Actions.playlist()}
             >
             <Image source={require('../../assets/hoodedeyes.png')} style={styles.facialImage}/>
             <Text style={styles.text}>Almond Eyes</Text>
           </TouchableOpacity>
           <TouchableOpacity 
-            style={styles.button}
+            style={styles.facialButton}
             onPress={() => Actions.HoodedEyes()}
             >
               <Image source={require('../../assets/hoodedeyes.png')} style={styles.facialImage}/>
               <Text style={styles.text}>Hooded Eyes</Text>
           </TouchableOpacity>
           <TouchableOpacity 
-            style={styles.button}
+            style={styles.facialButton}
             onPress={() => Actions.MonolidEyes()}
             >
               <Image source={require('../../assets/closeeyes.png')} style={styles.facialImage}/>

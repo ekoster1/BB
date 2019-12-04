@@ -18,9 +18,22 @@ const styles = StyleSheet.create({
       alignItems: "center",
       justifyContent: "center",
     },
+    facialButton:{
+        margin:20,
+        padding:10,
+        backgroundColor:"#CCCCFF",
+        borderRadius: 10,
+        width: 350,
+        borderColor: "#6666FC",
+        borderWidth: 2,
+        justifyContent: 'center'
+      },
     text:{
         color:"#6666FC",
         fontSize: 20,
+    },
+    textInput: {
+        width: 300,
     },
     image: {
         width: 100,
@@ -29,6 +42,12 @@ const styles = StyleSheet.create({
         marginTop: 0,
         alignItems: "center",
         justifyContent: "center",
+    },
+    facialImage: {
+        width: 100,
+        height: 40, 
+        marginRight: 25,
+        marginTop: 0,
     },
     safeArea: {
         flex: 1,
