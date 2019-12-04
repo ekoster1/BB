@@ -5,16 +5,16 @@ import {styles} from './Styles';
 
 const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
-const API_KEY = "API_KEY_placeholder";
+const API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
 
 export default class Playlist extends Component {
-  
+
   playlist(){
     Actions.playlist();
   }
 
-  watchVideo(video_url){
-    Actions.watchvideo({video_url: video_url});
+  Video(video_url){
+    Actions.video({video_url: video_url});
   }
 
   componentWillMount() {
@@ -46,8 +46,9 @@ export default class Playlist extends Component {
                 ({item}) =>
                 <TouchableOpacity
                     style={styles.demacate}
-                    onPress={() => this.video(item.contentDetails.videoId)}
-                >
+            onPress= {() => this.Video(item.contentDetails.videoId)} >
+
+
                 <Text
                   style={styles.item}
                 >
@@ -60,3 +61,4 @@ export default class Playlist extends Component {
     );
   }
 }
+
