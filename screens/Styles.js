@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         top:150,
     },
     facialImage: {
-        width: 200,
+        width: 100,
         height: 40, 
         marginRight: 25,
         marginTop: 0,
