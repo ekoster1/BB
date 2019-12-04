@@ -10,7 +10,8 @@ export default class Home extends Component {
                 <View style={styles.container}>
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
                     <Text style={styles.text}>Login</Text>
-                    <TextInput placeholder="Username"/>
+                    <TextInput style={{height: 40, borderBottomColor: '#6666FC', borderBottomWidth: 1}} 
+                        placeholder="Username" onChangeText={text => onChangeText(text)} value={value}/>
                     <TextInput placeholder="Password"/>
                     <TouchableOpacity
                     style={styles.button}
