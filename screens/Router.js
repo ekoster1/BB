@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View} from 'react-native';
-import {Actions, Router, Scene} from 'react-native-router-flux';
+import {Actions, Router, Scene, Stack} from 'react-native-router-flux';
 
 import Playlist from './Playlist';
 import WatchVideo from './Video';
@@ -14,7 +14,7 @@ import SkinTone from './categories/SkinTone';
 
 const App = () => (
     <Router>
-        <Scene key="root">
+        <Stack key="root">
             <Scene key="home" component={Home} title="Home" initial/>
             <Scene key="categories" component={CategoriesPage} title="Facial Categories"/>
             <Scene key="EyeShape" component={EyeShape} title="Eye Shape"/>
@@ -24,7 +24,7 @@ const App = () => (
             <Scene key="playlist" component={Playlist} title="Playlist"/>
             <Scene key="video" component={WatchVideo} title="Video Player"/>
             <Scene key="login" component={LoginPage} title="Login"/>
-        </Scene>
+        </Stack>
     </Router>
 )
 
