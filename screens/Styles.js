@@ -10,10 +10,10 @@ const styles = StyleSheet.create({
     button:{
       margin:20,
       padding:10,
-      backgroundColor:"#F1E7E5",
+      backgroundColor:"#CCCCFF",
       borderRadius: 10,
       width: 350,
-      borderColor: "#FEBA95",
+      borderColor: "#6666FC",
       borderWidth: 2,
       alignItems: "center",
       justifyContent: "center",
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff'
     },
     demacate: {
-        borderBottomColor: '#F1E7E5',
+        borderBottomColor: '#6666FC',
         borderBottomWidth: 2,
         borderRadius:10
     },

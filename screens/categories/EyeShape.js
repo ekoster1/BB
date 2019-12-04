@@ -11,7 +11,7 @@ export default class EyeShape extends Component {
           <View></View>
           <TouchableOpacity 
             style={styles.button}
-            onPress={() => Actions.AlmondEyes()}
+            onPress={() => Actions.Playlist()}
             >
               <Text style={styles.text}>Almond Eyes</Text>
           </TouchableOpacity>
