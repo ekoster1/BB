@@ -7,8 +7,8 @@ import Router from './Router'
 export default class Home extends Component {
     render(){
         return (
-                <View>
-                    <Image source={{uri: 'COMP322logo.png'}} style={styles.image} />
+                <View style={styles.container}>
+                    <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
                     <TouchableOpacity
                     style={styles.button}
                     onPress={() => Actions.categories()}
