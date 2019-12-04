@@ -8,7 +8,6 @@ export default class Home extends Component {
     render(){
         return (
                 <View>
-                    <Router/>
                     <Image source={{uri: 'COMP322logo.png'}} style={styles.image} />
                     <TouchableOpacity
                     style={styles.button}
