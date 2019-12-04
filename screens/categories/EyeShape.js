@@ -13,7 +13,7 @@ export default class EyeShape extends Component {
             style={styles.facialButton}
             onPress={() => Actions.playlist()}
             >
-            <Image source={require('../../assets/hoodedeyes.png')} style={styles.facialImage}/>
+            <Image source={require('../../assets/almondeyes.png')} style={styles.facialImage}/>
             <Text style={styles.text}>Almond Eyes</Text>
           </TouchableOpacity>
           <TouchableOpacity 
