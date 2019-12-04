@@ -37,9 +37,9 @@ const styles = StyleSheet.create({
     },
     textInput: {
         height: 40, 
+        width: 100,
         borderBottomColor: 'white', 
         borderBottomWidth: 1, 
-        borderBottomWidth: 150
     },
     image: {
         width: 300,
