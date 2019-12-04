@@ -27,11 +27,13 @@ const styles = StyleSheet.create({
         width: 350,
         borderColor: "#6666FC",
         borderWidth: 2,
-        justifyContent: 'center'
+        alignItems:'center'
+        
       },
     text:{
         color:"#6666FC",
         fontSize: 20,
+        
     },
     textInput: {
         width: 300,
