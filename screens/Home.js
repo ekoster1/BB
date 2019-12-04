@@ -14,7 +14,7 @@ export default class Home extends Component {
                         placeholder="Username" />
                     <TextInput style={styles.textInput} placeholder="Password"/>
                     <TouchableOpacity
-                    style={styles.button}
+                    style={styles.homeButton}
                     onPress={() => Actions.categories()}
                     >
                     <Text style={styles.text}>See Categories</Text>
