@@ -5,7 +5,7 @@ import {styles} from '../Styles';
 
 export default class EyeShape extends Component {
   render(){
-    const goToAlmond = () => Actions.playlist({max = 15, id = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR", key = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE"}); 
+      const goToAlmond = () => Actions.playlist({id : "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR"})
     return (
       <View style={styles.container}>
         <ScrollView>

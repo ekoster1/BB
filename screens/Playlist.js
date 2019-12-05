@@ -9,9 +9,9 @@ import { Thumbnail } from 'react-native-thumbnail-video';
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
 const API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
 */
-MAX_RESULT = this.props.max;
-PLAYLIST_ID = this.props.id;
-API_KEY = this.props.key;
+MAX_RESULT = 15
+//PLAYLIST_ID = this.props.id;
+API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
 
 export default class Playlist extends Component {
 
@@ -28,7 +28,7 @@ export default class Playlist extends Component {
   }
 
   fetchPlaylistData = async () => {
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${PLAYLIST_ID}&maxResults=${MAX_RESULT}&part=snippet%2CcontentDetails&key=${API_KEY}`);
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${this.props.id}&maxResults=${MAX_RESULT}&part=snippet%2CcontentDetails&key=${API_KEY}`);
     const json = await response.json();
     this.setState({ videos: json['items']});
     console.log(this.state.videos)
