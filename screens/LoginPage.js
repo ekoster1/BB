@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Text, View, Image, ScrollView, Header, TouchableOpacity, TextInput } from 'react-native';
+import { Text, View, Image, ScrollView, Header, TouchableOpacity, TextInput, secureTextEntry } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {styles} from './Styles';
 import Router from './Router'
@@ -15,7 +15,7 @@ export default class LoginPage extends Component {
                 <Text style={styles.loginText}>  </Text>
                 <TextInput style={styles.textInput}
                 placeholder="Username" />
-                <TextInput style={styles.textInput} placeholder="Password"/>
+                <TextInput style={styles.textInput} placeholder="Password" secureTextEntry = {true}/>
                 <TouchableOpacity
                 style={styles.loginButton}
                 onPress={() => Actions.categories()}

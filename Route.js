@@ -41,7 +41,7 @@ import SkinTone from './screens/SkinTone';
 export default class Routes extends Component {
   render(){
       return(
-             <Router navigationBarStyle={{backgroundColor:'#6666FC'}} tintColor="white">
+             <Router navigationBarStyle={{backgroundColor:'#8c8cff'}} tintColor="white">
             <Stack key="root">
                 <Scene key="home" component={Home} hideNavBar={true} title="Home" initial/>
                 <Scene key="categories" component={CategoriesPage} title="Categories"/>

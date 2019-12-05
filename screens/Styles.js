@@ -70,6 +70,14 @@ const styles = StyleSheet.create({
                                  
                                 
     fontSize: 20,
+                                 fontFamily: 'Gill Sans',
+                                 },
+                                 categoriesText:{
+                                 color:"#6666FC",
+                                 
+                                 
+                                 fontSize: 22,
+                                 fontFamily: 'GillSans-Light',
                                  },
                                  homeText:{
                                  color:"#6666FC",
@@ -81,9 +89,10 @@ const styles = StyleSheet.create({
                                  
                                  imageText:{
 //                                 color:"#918f89",
+                                 fontFamily: 'Gill Sans',
                                  color:"#6666FC",
                                 
-    fontSize: 16,
+    fontSize: 17,
                                  shadowOffset:{  width: 1,  height: 1,  },
                                  shadowColor: 'black',
                                  shadowOpacity: .05,
@@ -105,11 +114,12 @@ const styles = StyleSheet.create({
         borderBottomColor: 'white', 
         borderBottomWidth: 1,
                                  marginBottom: 15,
-                                 fontSize: 16
+                                 fontSize: 16,
+                                 color: 'gray',
     },
     image: {
-        width: 310,
-        height: 110,
+        width: 320,
+        height: 120,
 //        margin: 20,
                                  marginBottom: 70,
         marginTop: 60,

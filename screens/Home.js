@@ -18,7 +18,7 @@ export default class Home extends Component {
                     style={styles.loginButton}
                     onPress={() => Actions.login()}
                     >
-                    <Text style={styles.text}>Log In</Text>
+                    <Text style={styles.text}>Login</Text>
                     </TouchableOpacity>
                 <TouchableOpacity
                 style={styles.homeButton}
