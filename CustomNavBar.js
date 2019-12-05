@@ -22,22 +22,40 @@ export default class CustomNavBar extends React.Component {
     // }
     
     _renderLeft() {
-        if (Actions.currentScene === 'customNavBar1') {
+        if (Actions.currentScene != 'login') {
             return (
-                    <TouchableOpacity onPress={() => console.log('Hamburger button pressed')} style={[styles.navBarItem, { paddingLeft: 10 }]}>
+                    
+                    
+                    <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
+                    
+                    <TouchableOpacity onPress={() => console.log('Hamburger button pressed')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
                     <Image
-                    style={{ width: 30, height: 50 }}
+                    style={{ width: 50, height: 70 }}
                     resizeMode="contain"
-                    source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png' }}
+                    source={require('./assets/hamburgericon.png')}
                     />
                     </TouchableOpacity>
+                    
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 10 }]}>
+                    <Image style={{ width: 30, height: 50 }} resizeMode="contain" source={{ uri: 'https://image.flaticon.com/icons/png/512/0/340.png' }} />
+                    </TouchableOpacity>
+                    
+                    
+                    </View>
                     );
         }
+        else {
         return (
-                <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 10 }]}>
-                <Image style={{ width: 30, height: 50 }} resizeMode="contain" source={{ uri: 'https://image.flaticon.com/icons/png/512/0/340.png' }} />
+                <TouchableOpacity onPress={() => console.log('Hamburger button pressed')} style={[styles.navBarItem, { paddingLeft: 15, paddingTop:10, }]}>
+                <Image
+                style={{ width: 50, height: 70 }}
+                resizeMode="contain"
+                source={require('./assets/hamburgericon.png')}
+                />
                 </TouchableOpacity>
+                
                 );
+        }
     }
     
     _renderMiddle() {
@@ -52,7 +70,7 @@ export default class CustomNavBar extends React.Component {
         if (Actions.currentScene != 'login') {
         return (
                 <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
-                <TouchableOpacity onPress={() => console.log('Share')} style={{ paddingRight: 20, paddingTop: 15, }}>
+                <TouchableOpacity onPress={() => console.log('Share')} style={{ paddingRight: 25, paddingTop: 20, }}>
                 <Image style={{ width: 35, height: 50 }} resizeMode="contain" source={require('./assets/profileicon.png')} />
                 </TouchableOpacity>
                 </View>
