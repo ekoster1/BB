@@ -3,9 +3,14 @@ import { StyleSheet, SafeAreaView, FlatList, Text, TouchableOpacity } from 'reac
 import {Actions} from 'react-native-router-flux';
 import {styles} from './Styles';
 
-const MAX_RESULT = 15;
+/** 
+ * const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
 const API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
+*/
+MAX_RESULT = this.props.max;
+PLAYLIST_ID = this.props.id;
+API_KEY = this.props.key;
 
 export default class Playlist extends Component {
 
