@@ -41,10 +41,10 @@ import SkinTone from './screens/SkinTone';
 export default class Routes extends Component {
   render(){
       return(
-        <Router>
+             <Router navigationBarStyle={{backgroundColor:'#6666FC'}} tintColor="white">
             <Stack key="root">
-                <Scene key="home" component={Home} title="Home" initial/>
-                <Scene key="categories" component={CategoriesPage} title="Facial Categories"/>
+             <Scene key="home" component={Home} hideNavBar={true} title="Home" initial/>
+                <Scene key="categories" component={CategoriesPage} title="Categories"/>
                 <Scene key="EyeShape" component={EyeShape} title="Eye Shape"/>
                 <Scene key="FaceShape" component={FaceShape} title="Face Shape"/>
                 <Scene key="SkinTone" component={SkinTone} title="Skin Tone"/>

@@ -15,8 +15,8 @@ import SkinTone from './SkinTone';
 const App = () => (
     <Router>
         <Stack key="root">
-            <Scene key="home" component={Home} title="Home" initial/>
-            <Scene key="categories" component={CategoriesPage} title="Facial Categories"/>
+            <Scene key="home" component={Home} initial/>
+            <Scene key="categories" component={CategoriesPage} title="Categories"/>
             <Scene key="EyeShape" component={EyeShape} title="Eye Shape"/>
             <Scene key="FaceShape" component={FaceShape} title="Face Shape"/>
             <Scene key="SkinTone" component={SkinTone} title="Skin Tone"/>
