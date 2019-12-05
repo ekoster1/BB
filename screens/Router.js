@@ -8,9 +8,9 @@ import CategoriesPage from './Categories';
 import LoginPage from './LoginPage';
 import Home from './Home';
 import EyeShape from './EyeShape';
-import FaceShape from '.FaceShape';
-import SkinType from '.SkinType';
-import SkinTone from '.SkinTone';
+import FaceShape from './FaceShape';
+import SkinType from './SkinType';
+import SkinTone from './SkinTone';
 
 const App = () => (
     <Router>
