@@ -5,6 +5,11 @@ target 'BB' do
   # Pods for BB
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
+# Add the pods for any other Firebase products you want to use in your app
+# For example, to use Firebase Authentication and Cloud Firestore
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
   pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
   pod 'React', :path => '../node_modules/react-native/'
@@ -34,7 +39,7 @@ target 'BB' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
+  pod 'Firebase/Analytics'
   target 'BBTests' do
     inherit! :search_paths
     # Pods for testing
@@ -43,7 +48,7 @@ target 'BB' do
   use_native_modules!
 end
 
-target 'BB-tvOS' do
+  target 'BB-tvOS' do
   # Pods for BB-tvOS
 
   target 'BB-tvOSTests' do

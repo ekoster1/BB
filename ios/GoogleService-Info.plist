@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>719879273521-mm62flm5l5jom3fil4ohlvr9dl4mi2eq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.719879273521-mm62flm5l5jom3fil4ohlvr9dl4mi2eq</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>719879273521-1v2ke2vilnq141di6g49dbnc88o50qf4.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBSON5kjy5rqJNXR217KTe8hj9PuSxlvKA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>719879273521</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.BBeauty</string>
+	<key>PROJECT_ID</key>
+	<string>bbeauty-658f8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bbeauty-658f8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:719879273521:ios:0a7a6ff3faedccd6c4e910</string>
+	<key>DATABASE_URL</key>
+	<string>https://bbeauty-658f8.firebaseio.com</string>
+</dict>
+</plist>

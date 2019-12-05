@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, FlatList, Text, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
+import {styles} from '../Styles';
 
 const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
@@ -59,20 +60,3 @@ export default class Playlist extends Component<{}> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  safeArea: {
-    flex: 1,
-    backgroundColor: '#CCCCFF'
-  },
-  demacate: {
-    borderBottomColor: '#F1E7E5',
-    borderBottomWidth: 2,
-    borderRadius:10
-  },
-  item: {
-    padding: 10,
-    fontSize: 14,
-    height: 44,
-  },
-});
