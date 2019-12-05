@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     },
     homeButton:{
-      margin:20,
+      margin:10,
+                                 
       padding:10,
       backgroundColor:"#CCCCFF",
       borderRadius: 10,
@@ -44,20 +45,41 @@ const styles = StyleSheet.create({
     fontSize: 20,
         
     },
+                                 loginText:{
+                                 color:"#6666FC",
+                                 
+                                 fontSize: 26,
+                                 textAlign: 'left',
+                                 marginBottom: 10,
+                                 marginTop: 50,
+                                 
+                                 
+                                 },
     textInput: {
         height: 40, 
         width: 300,
         borderBottomColor: 'white', 
-        borderBottomWidth: 1, 
+        borderBottomWidth: 1,
+                                 marginBottom: 15,
     },
     image: {
-        width: 300,
-        height: 100, 
-        margin: 10,
-        marginTop: 0,
+        width: 350,
+        height: 150,
+//        margin: 20,
+                                 marginBottom: 40,
+        marginTop: 50,
         position:'absolute',
         top:150,
     },
+                                 loginImage: {
+                                 width: 300,
+                                 height: 100,
+                                 //        margin: 20,
+                                 marginBottom: 40,
+                                 marginTop: 0,
+                                 position:'absolute',
+                                 top:150,
+                                 },
     facialImage: {
         width: 120,
         height: 40,

@@ -11,16 +11,21 @@ export default class Home extends Component {
                 <View style={styles.container}>
                 
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
-                    <Text style={styles.text}> Login </Text>
-                    <TextInput style={styles.textInput} 
-                        placeholder="Username" />
-                    <TextInput style={styles.textInput} placeholder="Password"/>
+                    <Text style={styles.text}>  </Text>
+                <Text style={styles.text}>  </Text>
                     <TouchableOpacity
                     style={styles.homeButton}
-                    onPress={() => Actions.categories()}
+                    onPress={() => Actions.login()}
                     >
-                    <Text style={styles.text}>See Categories</Text>
+                    <Text style={styles.text}>Log In</Text>
                     </TouchableOpacity>
+                <TouchableOpacity
+                style={styles.homeButton}
+                onPress={() => Actions.categories()}
+                >
+                <Text style={styles.text}>See Categories</Text>
+                </TouchableOpacity>
+                
                 </View>
             );
     }

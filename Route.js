@@ -43,7 +43,7 @@ export default class Routes extends Component {
       return(
              <Router navigationBarStyle={{backgroundColor:'#6666FC'}} tintColor="white">
             <Stack key="root">
-             <Scene key="home" component={Home} hideNavBar={true} title="Home" initial/>
+                <Scene key="home" component={Home} hideNavBar={true} title="Home" initial/>
                 <Scene key="categories" component={CategoriesPage} title="Categories"/>
                 <Scene key="EyeShape" component={EyeShape} title="Eye Shape"/>
                 <Scene key="FaceShape" component={FaceShape} title="Face Shape"/>
@@ -51,7 +51,7 @@ export default class Routes extends Component {
                 <Scene key="SkinType" component={SkinType} title="Skin Type"/>
                 <Scene key="playlist" component={Playlist} title="Playlist"/>
                 <Scene key="video" component={WatchVideo} title="Video Player"/>
-                <Scene key="login" component={LoginPage} title="Login"/>
+             <Scene key="login" component={LoginPage} title="Login"/>
             </Stack>
         </Router>
       )
