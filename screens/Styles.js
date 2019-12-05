@@ -133,6 +133,9 @@ const styles = StyleSheet.create({
         height: 44,
         width: 300,
         fontSize: 18,
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .03,
                                 
     },
   });
