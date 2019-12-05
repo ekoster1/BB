@@ -5,21 +5,22 @@ import {styles} from '../Styles';
 
 export default class EyeShape extends Component {
   render(){
-      const goToAlmond = () => Actions.playlist({id : "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR"})
+      const goToAlmond = () => Actions.playlist({id : "PL6sCTSXxmmq-rgkZJ6D9fxbg4cY8U9N_W"})
+      const goToHooded = () => Actions.playlist({id : "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR"})
     return (
       <View style={styles.container}>
         <ScrollView>
           <View></View>
           <TouchableOpacity 
             style={styles.facialButton}
-            onPress={() => Actions.playlist()}
+            onPress={goToAlmond}
             >
             <Image source={require('../../assets/almondeyes.png')} style={styles.facialImage}/>
             <Text style={styles.text}>Almond Eyes</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.facialButton}
-            onPress={goToAlmond}
+            onPress={goToHooded}
             >
               <Image source={require('../../assets/hoodedeyes.png')} style={styles.facialImage}/>
               <Text style={styles.text}>Hooded Eyes</Text>
