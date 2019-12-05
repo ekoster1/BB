@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
                                  color:"#6666FC",
                                  
                                  fontSize: 20,
-                                 marginBottom: 150,
+                                 marginBottom: 170,
         
     },
                                  
@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
         height: 110,
 //        margin: 20,
                                  marginBottom: 70,
-        marginTop: 50,
+        marginTop: 60,
         position:'absolute',
         top:150,
     },
