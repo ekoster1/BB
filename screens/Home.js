@@ -13,8 +13,9 @@ export default class Home extends Component {
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
                     <Text style={styles.text}>  </Text>
                 <Text style={styles.text}>  </Text>
+                <Text style={styles.homeText}>  </Text>
                     <TouchableOpacity
-                    style={styles.homeButton}
+                    style={styles.loginButton}
                     onPress={() => Actions.login()}
                     >
                     <Text style={styles.text}>Log In</Text>

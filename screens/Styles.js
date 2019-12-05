@@ -21,23 +21,42 @@ const styles = StyleSheet.create({
                                  
       padding:10,
       backgroundColor:"#CCCCFF",
-      borderRadius: 10,
-      width: 300,
+      borderRadius: 25,
+      width: 290,
       borderColor: "#6666FC",
-      borderWidth: 2,
+      borderWidth: 1,
       alignItems: "center",
       justifyContent: "center",
-    },                     
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .05,
+    },
+                                 loginButton:{
+                                 margin:10,
+                                 
+                                 padding:10,
+                                 backgroundColor:"#FFF",
+                                 borderRadius: 25,
+                                 width: 290,
+                                 borderColor: "#FFF",
+                                 borderWidth: 2,
+                                 alignItems: "center",
+                                 justifyContent: "center",
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .07,
+                                 },
   facialButton: {
         flexDirection: 'column',
         margin:7,
                                  marginTop: 0,
+                                 
         padding:10,
         backgroundColor:"#CCCCFF",
         borderRadius: 10,
         width: 160,
-        height: 140,
-        borderColor: "#6666FC",
+        height: 160,
+                                 borderColor: "#8c8cff",
         borderWidth: 1,
         alignItems:'center',
                                  color: '#FFFF',
@@ -48,24 +67,35 @@ const styles = StyleSheet.create({
     },
     text:{
                                  color:"#6666FC",
+                                 
                                 
     fontSize: 20,
+                                 },
+                                 homeText:{
+                                 color:"#6666FC",
+                                 
+                                 fontSize: 20,
+                                 marginBottom: 150,
         
     },
                                  
                                  imageText:{
+//                                 color:"#918f89",
                                  color:"#6666FC",
                                 
     fontSize: 16,
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .05,
         
     },
                                  loginText:{
                                  color:"#6666FC",
                                  
-                                 fontSize: 26,
+                                 fontSize: 12,
                                  textAlign: 'left',
-                                 marginBottom: 10,
-                                 marginTop: 40,
+                                 marginBottom: 0,
+                                 marginTop: 5,
                                  
                                  
                                  },
@@ -78,10 +108,10 @@ const styles = StyleSheet.create({
                                  fontSize: 16
     },
     image: {
-        width: 350,
-        height: 150,
+        width: 310,
+        height: 110,
 //        margin: 20,
-                                 marginBottom: 40,
+                                 marginBottom: 70,
         marginTop: 50,
         position:'absolute',
         top:150,
@@ -98,8 +128,8 @@ const styles = StyleSheet.create({
     facialImage: {
         width: 140,
         height: 45,
-        marginTop: 25,
-        marginBottom: 25,
+        marginTop: 30,
+        marginBottom: 35,
         padding:10,
         resizeMode:'stretch',
     },
@@ -114,8 +144,9 @@ const styles = StyleSheet.create({
     },
     demacate: {
         borderBottomColor: '#6666FC',
+                                 borderColor: '#6666FC',
         borderBottomWidth: 2,
-        borderRadius:10
+        borderRadius:1
     },
     item: {
         padding: 20,
@@ -128,8 +159,8 @@ const styles = StyleSheet.create({
         marginTop: 20,
         padding:10,
         borderRadius: 0,
-        borderBottomColor: "#6666FC",
-        borderBottomWidth: 2,
+        borderBottomColor: "#8c8cff",
+        borderBottomWidth: 1.3,
         height: 44,
         width: 300,
         fontSize: 18,

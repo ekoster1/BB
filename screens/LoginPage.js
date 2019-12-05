@@ -11,16 +11,18 @@ export default class LoginPage extends Component {
                 
                 <Image source={require('../assets/COMP322logo.png')} style={styles.loginImage} />
                 <Text style={styles.text}>  </Text>
-                <Text style={styles.loginText}> Sign In </Text>
+                <Text style={styles.text}>  </Text>
+                <Text style={styles.loginText}>  </Text>
                 <TextInput style={styles.textInput}
                 placeholder="Username" />
                 <TextInput style={styles.textInput} placeholder="Password"/>
                 <TouchableOpacity
-                style={styles.homeButton}
+                style={styles.loginButton}
                 onPress={() => Actions.categories()}
                 >
                 <Text style={styles.text}>Login</Text>
                 </TouchableOpacity>
+                <Text style={styles.loginText}> forgot password? </Text>
                 </View>
                 );
     }
