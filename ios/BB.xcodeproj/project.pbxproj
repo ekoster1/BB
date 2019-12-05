@@ -18,6 +18,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* BBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BBTests.m */; };
 		5DF4995016D426ECA8CA14AC /* libPods-BB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088DAE29A7D46FDAFF881549 /* libPods-BB.a */; };
 		66887A80442A8F8C878B626C /* libPods-BB-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 102F0843C05B9BE2E5F83029 /* libPods-BB-tvOS.a */; };
+		89E660862398514F000CC369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89E660852398514F000CC369 /* GoogleService-Info.plist */; };
 		C341389A559E654DBF000893 /* libPods-BBTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42188C1BE20AF53149DD4C3D /* libPods-BBTests.a */; };
 		F7319C314B115FBFA66FFAFB /* libPods-BB-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D89EA48867B17E88181DF61D /* libPods-BB-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		2D02E47B1E0B4A5D006451C7 /* BB-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BB-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* BB-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BB-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42188C1BE20AF53149DD4C3D /* libPods-BBTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BBTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89E660852398514F000CC369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9A70564F0B487050CCEEAD85 /* Pods-BB-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BB-tvOSTests/Pods-BB-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9DB964AFA74C584BBB92546 /* Pods-BB-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BB-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BB-tvOSTests/Pods-BB-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		B64ECB08BC4D2FA8FD4273C0 /* Pods-BBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBTests.debug.xcconfig"; path = "Target Support Files/Pods-BBTests/Pods-BBTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* BB */ = {
 			isa = PBXGroup;
 			children = (
+				89E660852398514F000CC369 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +197,6 @@
 				B64ECB08BC4D2FA8FD4273C0 /* Pods-BBTests.debug.xcconfig */,
 				BDDAA419584F3DB658049DD8 /* Pods-BBTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -230,6 +232,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				4DE6C0AE36D6A7E876CB5D82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +311,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +342,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				89E660862398514F000CC369 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +435,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		4DE6C0AE36D6A7E876CB5D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BB/Pods-BB-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BB/Pods-BB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		790290CD3DCC7E2722303C36 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
