@@ -27,6 +27,8 @@ export default class Routes extends Component<{}> {
 import React, { Component } from 'react';
 import { View, Platform} from 'react-native';
 import {Actions, Router, Scene, Stack} from 'react-native-router-flux';
+//import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 import Playlist from './screens/Playlist';
 import WatchVideo from './screens/Video';
@@ -41,7 +43,11 @@ import SkinTone from './screens/SkinTone';
 export default class Routes extends Component {
   render(){
       return(
-             <Router navigationBarStyle={{backgroundColor:'#8c8cff'}} tintColor="white">
+             <Router navigationBarStyle={{backgroundColor:'#8c8cff'}} tintColor="white" 
+//             onRight={()=>{}}
+//             rightTitle={null}
+//             rightButtonIconStyle={{ width: 44, height: 44 }}>
+             >
             <Stack key="root">
                 <Scene key="home" component={Home} hideNavBar={true} title="Home" initial/>
                 <Scene key="categories" component={CategoriesPage} title="Categories"/>
