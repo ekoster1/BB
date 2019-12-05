@@ -49,16 +49,15 @@ export default class CustomNavBar extends React.Component {
     }
     
     _renderRight() {
+        if (Actions.currentScene != 'login') {
         return (
                 <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
-                <TouchableOpacity onPress={() => console.log('Share')} style={{ paddingRight: 15, paddingTop: 15, }}>
-                <Image style={{ width: 30, height: 50 }} resizeMode="contain" source={{ uri: 'https://cdn3.iconfinder.com/data/icons/glypho-free/64/share-512.png' }} />
-                </TouchableOpacity>
-                <TouchableOpacity onPress={() => console.log('Search')} style={{ paddingRight: 15, paddingTop: 15 }}>
-                <Image style={{ width: 30, height: 50 }} resizeMode="contain" source={{ uri: 'https://maxcdn.icons8.com/Share/icon/p1em/Very_Basic//search1600.png' }} />
+                <TouchableOpacity onPress={() => console.log('Share')} style={{ paddingRight: 20, paddingTop: 15, }}>
+                <Image style={{ width: 35, height: 50 }} resizeMode="contain" source={require('./assets/profileicon.png')} />
                 </TouchableOpacity>
                 </View>
                 );
+        }
     }
     
     render() {
