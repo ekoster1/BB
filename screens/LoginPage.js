@@ -20,7 +20,7 @@ export default class LoginPage extends Component {
                 style={styles.loginButton}
                 onPress={() => Actions.categories()}
                 >
-                <Text style={styles.text}>Login</Text>
+                <Text style={styles.homeText}>Login</Text>
                 </TouchableOpacity>
                 <Text style={styles.loginText}> forgot password? </Text>
                 </View>

@@ -3,7 +3,8 @@ import { StyleSheet, Dimensions} from 'react-native';
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#CCCCFF',
+                                 backgroundColor: '#FFF',
+//                                 '#CCCCFF',
       alignItems: 'center',
       justifyContent: 'center',
                                 
@@ -11,7 +12,7 @@ const styles = StyleSheet.create({
     facialContainer: {
       flex: 1,
       flexDirection:'row',
-      backgroundColor: '#CCCCFF',
+      backgroundColor: '#FFF',
       alignItems: 'center',
       justifyContent: 'center',
                                  marginTop: 7,
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
       margin:10,
                                  
       padding:10,
-      backgroundColor:"#CCCCFF",
+      backgroundColor:"#FFF",
       borderRadius: 25,
       width: 290,
       borderColor: "#6666FC",
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
                                  margin:10,
                                  
                                  padding:10,
-                                 backgroundColor:"#FFF",
+                                 backgroundColor:"#6666FC",
                                  borderRadius: 25,
                                  width: 290,
                                  borderColor: "#FFF",
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
                                  marginTop: 0,
                                  
         padding:10,
-        backgroundColor:"#CCCCFF",
+        backgroundColor:"#FFF",
         borderRadius: 10,
         width: 157,
         height: 150,
@@ -80,10 +81,10 @@ const styles = StyleSheet.create({
                                  fontFamily: 'GillSans-Light',
                                  },
                                  homeText:{
-                                 color:"#6666FC",
+                                 color:"#FFF",
                                  
                                  fontSize: 20,
-                                 marginBottom: 170,
+                                 
         
     },
                                  
@@ -111,7 +112,7 @@ const styles = StyleSheet.create({
     textInput: {
         height: 40,
         width: 300,
-        borderBottomColor: 'white', 
+        borderBottomColor: '#8c8cff',
         borderBottomWidth: 1,
                                  marginBottom: 15,
                                  fontSize: 16,
@@ -146,7 +147,7 @@ const styles = StyleSheet.create({
                                
     safeArea: {
         flex: 1,
-        backgroundColor: '#CCCCFF'
+        backgroundColor: '#fff'
     },
     videoSafeArea: {
         flex: 1,
@@ -154,7 +155,7 @@ const styles = StyleSheet.create({
     },
     demacate: {
         borderBottomColor: '#6666FC',
-                                 borderColor: '#6666FC',
+                                 borderTopColor: '#6666FC',
         borderBottomWidth: 2,
         borderRadius:1
     },
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
         padding: 20,
         fontSize: Dimensions.get('window').width * .05,
         height: 44,
-        color: '#FFF',
+        color: '#6666FC',
     },
     button:{
         margin: 10,

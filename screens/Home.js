@@ -11,6 +11,11 @@ export default class Home extends Component {
                 <View style={styles.container}>
                 
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
+                <View style={{
+                flexDirection:'column',
+                flex:.5,
+                paddingTop: 280,
+                }}>
                     <Text style={styles.text}>  </Text>
                 <Text style={styles.text}>  </Text>
                 <Text style={styles.homeText}>  </Text>
@@ -18,7 +23,7 @@ export default class Home extends Component {
                     style={styles.loginButton}
                     onPress={() => Actions.login()}
                     >
-                    <Text style={styles.text}>Login</Text>
+                    <Text style={styles.homeText}>Login</Text>
                     </TouchableOpacity>
                 <TouchableOpacity
                 style={styles.homeButton}
@@ -27,6 +32,7 @@ export default class Home extends Component {
                 <Text style={styles.text}>See Categories</Text>
                 </TouchableOpacity>
                 
+                </View>
                 </View>
             );
     }
