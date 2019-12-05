@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, FlatList, Text, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {styles} from './Styles';
+import { Thumbnail } from 'react-native-thumbnail-video';
 
 /** 
  * const MAX_RESULT = 15;
@@ -59,6 +60,8 @@ export default class Playlist extends Component {
                 >
                 {item.snippet.title}
                 </Text>
+            <Thumbnail url={"https://www.youtube.com/watch?v="+item.contentDetails.videoId }
+            onPress ={() => this.Video(item.contentDetails.videoId)}/>
                 </TouchableOpacity>
               }
             />

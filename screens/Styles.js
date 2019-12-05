@@ -1,4 +1,4 @@
-import { StyleSheet} from 'react-native';
+import { StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -7,32 +7,47 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    button:{
+    homeButton:{
       margin:20,
       padding:10,
       backgroundColor:"#CCCCFF",
       borderRadius: 10,
-      width: 350,
+      width: 300,
       borderColor: "#6666FC",
       borderWidth: 2,
       alignItems: "center",
       justifyContent: "center",
     },
-    facialButton:{
-        flexDirection: 'row',
+//    facialButton:{
+//        flexDirection: 'row',
+//        margin:20,
+//        padding:10,
+//        backgroundColor:"#CCCCFF",
+//        borderRadius: 10,
+//        width: 350,
+//        borderColor: "#6666FC",
+//        borderWidth: 2,
+//        alignItems:'center'
+//
+//      },
+                                 
+  facialButton: {
+        flexDirection: 'column',
         margin:20,
         padding:10,
         backgroundColor:"#CCCCFF",
         borderRadius: 10,
-        width: 350,
+        width: 150,
+        height: 125,
         borderColor: "#6666FC",
-        borderWidth: 2,
-        alignItems:'center'
-        
-      },
+        borderWidth: 1,
+        alignItems:'center',
+                                 color: '#FFFF',
+    },
     text:{
         color:"#6666FC",
-        fontSize: 20,
+                                
+    fontSize: 20,
         
     },
     textInput: {
@@ -51,12 +66,14 @@ const styles = StyleSheet.create({
     },
     facialImage: {
         width: 120,
-        height: 40, 
-        marginRight: 25,
-        marginTop: 0,
+        height: 40,
+//        marginRight: 25,
+        marginTop: 15,
+        marginBottom: 10,
         padding:10,
         resizeMode:'stretch',
     },
+                               
     safeArea: {
         flex: 1,
         backgroundColor: '#CCCCFF'
@@ -71,10 +88,26 @@ const styles = StyleSheet.create({
         borderRadius:10
     },
     item: {
-        padding: 10,
-        fontSize: 14,
+        padding: 20,
+        fontSize: Dimensions.get('window').width * .05,
         height: 44,
-    }
+                                 color: '#FFF',
+    },
+    button:{
+                                 margin: 10,
+                                 marginTop: 20,
+
+      padding:10,
+     
+      borderRadius: 10,
+      borderBottomColor: "#6666FC",
+      borderBottomWidth: 2,
+ 
+                                 height: 44,
+                                 width: 300,
+                
+                                 fontSize: 18,
+    },
   });
 
   export {styles}
