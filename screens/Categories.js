@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Text, View, ScrollView, Header, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
 
 export default class CategoriesPage extends Component {
   render(){

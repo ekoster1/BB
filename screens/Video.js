@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
 
 export default class WatchVideo extends Component<{}> {
   
