@@ -16,9 +16,9 @@ export default class CategoriesPage extends Component {
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.button}
-            onPress={() => Actions.SkinTone()}
+            onPress={() => Actions.SkinType()}
             >
-              <Text style={styles.text}>Skin Tone</Text>
+              <Text style={styles.text}>Skin Type</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={styles.button}
