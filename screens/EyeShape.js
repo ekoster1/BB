@@ -9,6 +9,7 @@ export default class EyeShape extends Component {
       const goToHooded = () => Actions.playlist({id : "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR"})
     return (
       <View style={styles.container}>
+            <View style={{flex:0.1}}/>
         <ScrollView>
           <View style={styles.facialContainer}>
             <TouchableOpacity
@@ -16,14 +17,14 @@ export default class EyeShape extends Component {
                 onPress={goToAlmond}
                 >
                 <Image source={require('../assets/almondeyes.png')} style={styles.facialImage}/>
-                <Text style={styles.text}>Almond Eyes</Text>
+                <Text style={styles.imageText}>Almond Eyes</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 style={styles.facialButton}
                 onPress={goToHooded}
                 >
                 <Image source={require('../assets/hoodedeyes.png')} style={styles.facialImage}/>
-                <Text style={styles.text}>Hooded Eyes</Text>
+                <Text style={styles.imageText}>Hooded Eyes</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.facialContainer}>
@@ -32,14 +33,14 @@ export default class EyeShape extends Component {
                 onPress={() => Actions.MonolidEyes()}
                 >
                 <Image source={require('../assets/closeeyes.png')} style={styles.facialImage}/>
-                <Text style={styles.text}>Close Eyes</Text>
+                <Text style={styles.imageText}>Close Eyes</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 style={styles.facialButton}
                 onPress={() => Actions.MonolidEyes()}
                 >
-                <Image source={require('../assets/closeeyes.png')} style={styles.facialImage}/>
-                <Text style={styles.text}>FOURTH</Text>
+                <Image source={require('../assets/upturnedeyes.png')} style={styles.facialImage}/>
+                <Text style={styles.imageText}>Upturned Eyes</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>

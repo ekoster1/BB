@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#CCCCFF',
       alignItems: 'center',
       justifyContent: 'center',
+                                
     },
     facialContainer: {
       flex: 1,
@@ -13,6 +14,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#CCCCFF',
       alignItems: 'center',
       justifyContent: 'center',
+                                 marginTop: 7,
     },
     homeButton:{
       margin:10,
@@ -28,7 +30,8 @@ const styles = StyleSheet.create({
     },                     
   facialButton: {
         flexDirection: 'column',
-        margin:10,
+        margin:7,
+                                 marginTop: 0,
         padding:10,
         backgroundColor:"#CCCCFF",
         borderRadius: 10,
@@ -38,11 +41,19 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         alignItems:'center',
                                  color: '#FFFF',
+                                 borderRadius: 2,
     },
     text:{
-        color:"#6666FC",
+                                 color:"#6666FC",
                                 
     fontSize: 20,
+        
+    },
+                                 
+                                 imageText:{
+                                 color:"#6666FC",
+                                
+    fontSize: 16,
         
     },
                                  loginText:{
@@ -56,11 +67,12 @@ const styles = StyleSheet.create({
                                  
                                  },
     textInput: {
-        height: 40, 
+        height: 40,
         width: 300,
         borderBottomColor: 'white', 
         borderBottomWidth: 1,
                                  marginBottom: 15,
+                                 fontSize: 16
     },
     image: {
         width: 350,
@@ -81,10 +93,10 @@ const styles = StyleSheet.create({
                                  top:150,
                                  },
     facialImage: {
-        width: 120,
-        height: 40,
-        marginTop: 15,
-        marginBottom: 10,
+        width: 140,
+        height: 45,
+        marginTop: 25,
+        marginBottom: 25,
         padding:10,
         resizeMode:'stretch',
     },
@@ -112,12 +124,13 @@ const styles = StyleSheet.create({
         margin: 10,
         marginTop: 20,
         padding:10,
-        borderRadius: 10,
+        borderRadius: 0,
         borderBottomColor: "#6666FC",
         borderBottomWidth: 2,
         height: 44,
         width: 300,
         fontSize: 18,
+                                
     },
   });
 
