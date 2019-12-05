@@ -11,7 +11,7 @@ export default class Home extends Component {
                 <View style={styles.container}>
                 
                     <Image source={require('../assets/COMP322logo.png')} style={styles.image} />
-                    <Text style={styles.text}>Login</Text>
+                    <Text style={styles.text}> Login </Text>
                     <TextInput style={styles.textInput} 
                         placeholder="Username" />
                     <TextInput style={styles.textInput} placeholder="Password"/>
