@@ -7,10 +7,10 @@ import WatchVideo from './Video';
 import CategoriesPage from './Categories';
 import LoginPage from './LoginPage';
 import Home from './Home';
-import EyeShape from './categories/EyeShape';
-import FaceShape from './categories/FaceShape';
-import SkinType from './categories/SkinType';
-import SkinTone from './categories/SkinTone';
+import EyeShape from './EyeShape';
+import FaceShape from '.FaceShape';
+import SkinType from '.SkinType';
+import SkinTone from '.SkinTone';
 
 const App = () => (
     <Router>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View, ScrollView, Header, Image, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
 
 export default class EyeShape extends Component {
   render(){

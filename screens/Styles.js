@@ -17,20 +17,7 @@ const styles = StyleSheet.create({
       borderWidth: 2,
       alignItems: "center",
       justifyContent: "center",
-    },
-//    facialButton:{
-//        flexDirection: 'row',
-//        margin:20,
-//        padding:10,
-//        backgroundColor:"#CCCCFF",
-//        borderRadius: 10,
-//        width: 350,
-//        borderColor: "#6666FC",
-//        borderWidth: 2,
-//        alignItems:'center'
-//
-//      },
-                                 
+    },                     
   facialButton: {
         flexDirection: 'column',
         margin:20,
@@ -67,7 +54,6 @@ const styles = StyleSheet.create({
     facialImage: {
         width: 120,
         height: 40,
-//        marginRight: 25,
         marginTop: 15,
         marginBottom: 10,
         padding:10,
@@ -91,22 +77,18 @@ const styles = StyleSheet.create({
         padding: 20,
         fontSize: Dimensions.get('window').width * .05,
         height: 44,
-                                 color: '#FFF',
+        color: '#FFF',
     },
     button:{
-                                 margin: 10,
-                                 marginTop: 20,
-
-      padding:10,
-     
-      borderRadius: 10,
-      borderBottomColor: "#6666FC",
-      borderBottomWidth: 2,
- 
-                                 height: 44,
-                                 width: 300,
-                
-                                 fontSize: 18,
+        margin: 10,
+        marginTop: 20,
+        padding:10,
+        borderRadius: 10,
+        borderBottomColor: "#6666FC",
+        borderBottomWidth: 2,
+        height: 44,
+        width: 300,
+        fontSize: 18,
     },
   });
 

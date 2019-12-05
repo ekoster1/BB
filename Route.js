@@ -33,10 +33,10 @@ import WatchVideo from './screens/Video';
 import CategoriesPage from './screens/Categories';
 import LoginPage from './screens/LoginPage';
 import Home from './screens/Home';
-import EyeShape from './screens/categories/EyeShape';
-import FaceShape from './screens/categories/FaceShape';
-import SkinType from './screens/categories/SkinType';
-import SkinTone from './screens/categories/SkinTone';
+import EyeShape from './screens/EyeShape';
+import FaceShape from './screens/FaceShape';
+import SkinType from './screens/SkinType';
+import SkinTone from './screens/SkinTone';
 
 export default class Routes extends Component {
   render(){
