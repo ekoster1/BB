@@ -36,8 +36,8 @@ export default class CustomNavBar extends React.Component {
                     />
                     </TouchableOpacity>
                     
-                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 10 }]}>
-                    <Image style={{ width: 30, height: 50 }} resizeMode="contain" source={{ uri: 'https://image.flaticon.com/icons/png/512/0/340.png' }} />
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 5, paddingTop: 7, }]}>
+                    <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
                     </TouchableOpacity>
                     
                     
@@ -46,12 +46,8 @@ export default class CustomNavBar extends React.Component {
         }
         else {
         return (
-                <TouchableOpacity onPress={() => console.log('Hamburger button pressed')} style={[styles.navBarItem, { paddingLeft: 15, paddingTop:10, }]}>
-                <Image
-                style={{ width: 50, height: 70 }}
-                resizeMode="contain"
-                source={require('./assets/hamburgericon.png')}
-                />
+                <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 15, paddingTop: 10, }]}>
+                <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
                 </TouchableOpacity>
                 
                 );
