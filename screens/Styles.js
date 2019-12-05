@@ -42,6 +42,9 @@ const styles = StyleSheet.create({
         alignItems:'center',
                                  color: '#FFFF',
                                  borderRadius: 2,
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .02,
     },
     text:{
                                  color:"#6666FC",
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
                                  fontSize: 26,
                                  textAlign: 'left',
                                  marginBottom: 10,
-                                 marginTop: 50,
+                                 marginTop: 40,
                                  
                                  
                                  },
@@ -87,7 +90,7 @@ const styles = StyleSheet.create({
                                  width: 300,
                                  height: 100,
                                  //        margin: 20,
-                                 marginBottom: 40,
+                                 marginBottom: 30,
                                  marginTop: 0,
                                  position:'absolute',
                                  top:150,

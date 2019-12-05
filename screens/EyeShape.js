@@ -43,6 +43,22 @@ export default class EyeShape extends Component {
                 <Text style={styles.imageText}>Upturned Eyes</Text>
             </TouchableOpacity>
           </View>
+            <View style={styles.facialContainer}>
+            <TouchableOpacity
+                style={styles.facialButton}
+                onPress={() => Actions.MonolidEyes()}
+                >
+                <Image source={require('../assets/wideeyes.png')} style={styles.facialImage}/>
+                <Text style={styles.imageText}>Wide Eyes</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                style={styles.facialButton}
+                onPress={() => Actions.MonolidEyes()}
+                >
+                <Image source={require('../assets/downturnedeyes.png')} style={styles.facialImage}/>
+                <Text style={styles.imageText}>Downturned Eyes</Text>
+            </TouchableOpacity>
+          </View>
         </ScrollView>
       </View>
     );
