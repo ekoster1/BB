@@ -1,3 +1,5 @@
+
+
 import React, { Component } from 'react';
 
 import {
@@ -9,6 +11,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
 } from 'react-native';
+
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -136,7 +139,7 @@ export default class App extends React.Component {
             <GoogleSigninButton
               style={{ width: 312, height: 48 }}
               size={GoogleSigninButton.Size.Wide}
-              color={GoogleSigninButton.Color.Light}
+              color={GoogleSigninButton.Color.dark}
               onPress={this._signIn}
             />
           </View>
@@ -147,22 +150,26 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  imageStyle: {
-    width: 200,
-    height: 300,
-    resizeMode: 'contain',
-  },
-  button: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
-    padding: 10,
-    width: 300,
-    marginTop: 30,
-  },
-});
+   container: {
+     flex: 1,
+     backgroundColor: '#CCCCFF',
+     alignItems: 'center',
+     justifyContent: 'center',
+   },
+   imageStyle: {
+     width: 200,
+     height: 300,
+     resizeMode: 'contain',
+   },
+   button:{
+     margin:20,
+     padding:10,
+     backgroundColor:"#F1E7E5",
+     borderRadius: 10,
+     width: 350,
+     borderColor: "#FEBA95",
+     borderWidth: 2,
+     alignItems: "center",
+     justifyContent: "center",
+                                },
+                              });
