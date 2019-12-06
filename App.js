@@ -139,7 +139,7 @@ export default class App extends React.Component {
             <GoogleSigninButton
               style={{ width: 312, height: 48 }}
               size={GoogleSigninButton.Size.Wide}
-              color={GoogleSigninButton.Color.dark}
+              color={GoogleSigninButton.Color.Light}
               onPress={this._signIn}
             />
           </View>
