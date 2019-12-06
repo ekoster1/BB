@@ -1,7 +1,8 @@
 
 
+
 import React, { Component } from 'react';
-import React from 'react';
+
 import {
   StyleSheet,
   Text,
@@ -167,33 +168,4 @@ const styles = StyleSheet.create({
     width: 300,
     marginTop: 30,
   },
-});
-
-import {
-  StyleSheet,
-  View,
-  StatusBar,
-} from 'react-native';
-
-import Routes from './Route';
-
-export default class App extends Component<{}> {
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <StatusBar
-          backgroundColor="#fff"
-          barStyle="dark-content"
-        />
-        <Routes/>
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container : {
-    flex: 1,
-  }
 });
