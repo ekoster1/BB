@@ -26,7 +26,7 @@ export default class Routes extends Component<{}> {
 
 import React, { Component } from 'react';
 import { View, Platform} from 'react-native';
-import {Actions, Router, Scene, Stack} from 'react-native-router-flux';
+import {Actions, Router, Scene, Stack, Drawer, SideMenu} from 'react-native-router-flux';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -60,8 +60,16 @@ export default class Routes extends Component {
                 <Scene key="SkinType" component={SkinType} title="Skin Type"/>
                 <Scene key="playlist" component={Playlist} title="Playlist"/>
                 <Scene key="video" component={WatchVideo} title="Video Player"/>
+          
              <Scene  key="login" component={LoginPage} title="Login" />
+             
+             
+             
+
+             
             </Stack>
+             
+             
         </Router>
       )
   }

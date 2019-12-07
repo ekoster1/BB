@@ -2,6 +2,7 @@ import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react
 import React from 'react';
 import { Actions } from 'react-native-router-flux';
 
+
 const styles = StyleSheet.create({
                                  container: {
                                  height: 100,
@@ -17,9 +18,7 @@ const styles = StyleSheet.create({
                                  });
 
 export default class CustomNavBar extends React.Component {
-    // constructor(props) {
-    //   super(props)
-    // }
+   
     
     _renderLeft() {
         if (Actions.currentScene != 'login') {
@@ -28,7 +27,7 @@ export default class CustomNavBar extends React.Component {
                     
                     <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
                     
-                    <TouchableOpacity onPress={() => console.log('Hamburger button pressed')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
+                    <TouchableOpacity onPress={() => {this.drop()}} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
                     <Image
                     style={{ width: 50, height: 70 }}
                     resizeMode="contain"
