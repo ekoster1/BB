@@ -27,7 +27,7 @@ export default class CustomNavBar extends React.Component {
                     
                     <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
                     
-                    <TouchableOpacity onPress={() => {this.drop()}} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
+                    <TouchableOpacity onPress={() => console.log('Share')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
                     <Image
                     style={{ width: 50, height: 70 }}
                     resizeMode="contain"
@@ -42,6 +42,26 @@ export default class CustomNavBar extends React.Component {
                     
                     </View>
                     );
+        }
+        else if (Actions.currentScene == 'profile') {
+            return (
+            <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
+            
+                    <TouchableOpacity onPress={() => console.log('Share')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7, paddingRight: 0 }]}>
+            <Image
+            style={{ width: 50, height: 70 }}
+            resizeMode="contain"
+            source={require('./assets/hamburgericon.png')}
+            />
+            </TouchableOpacity>
+            
+            <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
+            <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
+            </TouchableOpacity>
+            
+            
+            </View>
+            );
         }
         else {
         return (
@@ -62,15 +82,26 @@ export default class CustomNavBar extends React.Component {
     }
     
     _renderRight() {
-        if (Actions.currentScene != 'login') {
+        if (Actions.currentScene != 'login' && Actions.currentScene != 'profile') {
         return (
                 <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
-                <TouchableOpacity onPress={() => console.log('Share')} style={{ paddingRight: 25, paddingTop: 20, }}>
+                <TouchableOpacity onPress={() => Actions.profile()} style={{ paddingRight: 25, paddingTop: 20, }}>
                 <Image style={{ width: 35, height: 50 }} resizeMode="contain" source={require('./assets/profileicon.png')} />
                 </TouchableOpacity>
                 </View>
                 );
         }
+        else {
+            return (
+                    <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
+                    <TouchableOpacity onPress={() => (console.log('profile'))} style={{ paddingRight: 25, paddingTop: 20, }}>
+                    <Image style={{ width: 35, height: 50 }} resizeMode="contain" />
+                    </TouchableOpacity>
+                    </View>
+            );
+        }
+        
+        
     }
     
     render() {

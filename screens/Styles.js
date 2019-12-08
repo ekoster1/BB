@@ -73,6 +73,15 @@ const styles = StyleSheet.create({
     fontSize: 20,
                                  fontFamily: 'Gill Sans',
                                  },
+                                 
+                                 profileText:{
+                                 color:"#6666FC",
+                                 lineHeight: 30,
+                                 
+                                 fontSize: 20,
+                                 fontFamily: 'Gill Sans',
+                                 },
+                                 
                                  categoriesText:{
                                  color:"#6666FC",
                                  
@@ -136,6 +145,20 @@ const styles = StyleSheet.create({
                                  position:'absolute',
                                  top:150,
                                  },
+    profileImage: {
+        width: 130,
+        height: 130,
+//        margin: 20,
+                                 marginBottom: 70,
+        marginTop: 60,
+        position:'absolute',
+        top:20,
+                                 
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .05,
+    },
+                                 
     facialImage: {
         width: 140,
         height: 45,

@@ -27,7 +27,7 @@ export default class Routes extends Component<{}> {
 import React, { Component } from 'react';
 import { View, Platform} from 'react-native';
 import {Actions, Router, Scene, Stack, Drawer, SideMenu} from 'react-native-router-flux';
-import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 
 import Playlist from './screens/Playlist';
@@ -40,6 +40,7 @@ import FaceShape from './screens/FaceShape';
 import SkinType from './screens/SkinType';
 import SkinTone from './screens/SkinTone';
 import CustomNavBar from './CustomNavBar';
+import Profile from './screens/Profile';
 
 export default class Routes extends Component {
   render(){
@@ -62,6 +63,7 @@ export default class Routes extends Component {
                 <Scene key="video" component={WatchVideo} title="Video Player"/>
           
              <Scene  key="login" component={LoginPage} title="Login" />
+             <Scene key="profile" component={Profile} title="Profile" />
              
              
              
