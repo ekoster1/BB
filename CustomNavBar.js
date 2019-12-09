@@ -21,13 +21,62 @@ export default class CustomNavBar extends React.Component {
    
     
     _renderLeft() {
-        if (Actions.currentScene != 'login') {
+        if (Actions.currentScene == 'login') {
+            
+            return (
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 15, paddingTop: 10, }]}>
+                    <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
+                    </TouchableOpacity>
+                    
+                    );
+        }
+//        else if (Actions.currentScene == 'profile') {
+//            return (
+//            <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
+//
+//                    <TouchableOpacity onPress={() => Actions.menu()} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7, paddingRight: 0 }]}>
+//            <Image
+//            style={{ width: 50, height: 70 }}
+//            resizeMode="contain"
+//            source={require('./assets/hamburgericon.png')}
+//            />
+//            </TouchableOpacity>
+//
+//            <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
+//            <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
+//            </TouchableOpacity>
+//
+//
+//            </View>
+//            );
+//        }
+        else if (Actions.currentScene == 'menu') {
+            return (
+                    <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
+                    
+                    <TouchableOpacity onPress={() => Actions.pop()} style={[styles.navBarItem, { paddingLeft: 20, paddingTop:7, paddingRight: 0 }]}>
+                    <Image
+                    style={{ width: 25, height: 50 }}
+                    resizeMode="contain"
+                    source={require('./assets/xicon.png')}
+                    />
+                    </TouchableOpacity>
+                    
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
+                    <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
+                    </TouchableOpacity>
+                    
+                    
+                    </View>
+                    );
+        }
+        else {
             return (
                     
                     
                     <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
                     
-                    <TouchableOpacity onPress={() => console.log('Share')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
+                    <TouchableOpacity onPress={() => Actions.menu()} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
                     <Image
                     style={{ width: 50, height: 70 }}
                     resizeMode="contain"
@@ -42,34 +91,7 @@ export default class CustomNavBar extends React.Component {
                     
                     </View>
                     );
-        }
-        else if (Actions.currentScene == 'profile') {
-            return (
-            <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
-            
-                    <TouchableOpacity onPress={() => console.log('Share')} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7, paddingRight: 0 }]}>
-            <Image
-            style={{ width: 50, height: 70 }}
-            resizeMode="contain"
-            source={require('./assets/hamburgericon.png')}
-            />
-            </TouchableOpacity>
-            
-            <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
-            <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
-            </TouchableOpacity>
-            
-            
-            </View>
-            );
-        }
-        else {
-        return (
-                <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 15, paddingTop: 10, }]}>
-                <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
-                </TouchableOpacity>
-                
-                );
+        
         }
     }
     

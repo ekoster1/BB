@@ -41,6 +41,7 @@ import SkinType from './screens/SkinType';
 import SkinTone from './screens/SkinTone';
 import CustomNavBar from './CustomNavBar';
 import Profile from './screens/Profile';
+import Menu from './screens/Menu';
 
 export default class Routes extends Component {
   render(){
@@ -64,6 +65,7 @@ export default class Routes extends Component {
           
              <Scene  key="login" component={LoginPage} title="Login" />
              <Scene key="profile" component={Profile} title="Profile" />
+             <Drawer key ="menu" component={Menu} title ="Menu" />
              
              
              

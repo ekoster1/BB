@@ -203,6 +203,23 @@ const styles = StyleSheet.create({
                                  shadowOpacity: .03,
                                 
     },
+                                 menuButton:{
+                                 margin: 33,
+                                 marginTop: 10,
+                                 marginBottom: 5,
+                                 
+                                 padding:10,
+                                 borderRadius: 0,
+                                 borderBottomColor: "#8c8cff",
+                                 borderBottomWidth: 1.3,
+                                 height: 44,
+                                 width: 269,
+                                 
+                                 shadowOffset:{  width: 1,  height: 1,  },
+                                 shadowColor: 'black',
+                                 shadowOpacity: .03,
+                                 
+                                 },
   });
 
   export {styles}
