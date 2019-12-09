@@ -30,26 +30,7 @@ export default class CustomNavBar extends React.Component {
                     
                     );
         }
-//        else if (Actions.currentScene == 'profile') {
-//            return (
-//            <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
-//
-//                    <TouchableOpacity onPress={() => Actions.menu()} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7, paddingRight: 0 }]}>
-//            <Image
-//            style={{ width: 50, height: 70 }}
-//            resizeMode="contain"
-//            source={require('./assets/hamburgericon.png')}
-//            />
-//            </TouchableOpacity>
-//
-//            <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
-//            <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
-//            </TouchableOpacity>
-//
-//
-//            </View>
-//            );
-//        }
+
         else if (Actions.currentScene == 'menu') {
             return (
                     <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
@@ -62,8 +43,8 @@ export default class CustomNavBar extends React.Component {
                     />
                     </TouchableOpacity>
                     
-                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
-                    <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
+                    <TouchableOpacity  style={[styles.navBarItem, { paddingLeft: 0, paddingTop: 7, }]}>
+                    <Image style={{ width: 25, height: 30 }} resizeMode="contain"  />
                     </TouchableOpacity>
                     
                     
