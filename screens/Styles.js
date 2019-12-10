@@ -160,8 +160,8 @@ const styles = StyleSheet.create({
     },
                                  
     facialImage: {
-        width: 140,
-        height: 45,
+        width: 125,
+        height: 40,
         marginTop: 30,
         marginBottom: 30,
         padding:10,
