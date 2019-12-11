@@ -66,7 +66,7 @@ export default class Routes extends Component {
           
              <Scene  key="login" component={LoginPage} title="Login" />
              <Scene key="profile" component={Profile} title="Profile" />
-             <Drawer key ="menu" component={Menu} transitionConfig={() => ({screenInterpolator: CardStackStyleInterpolator.forVertical})} title="Menu" />
+             <Drawer key ="menu" component={Menu}  title="Menu" />
              
              
              

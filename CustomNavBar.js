@@ -24,7 +24,7 @@ export default class CustomNavBar extends React.Component {
         if (Actions.currentScene == 'login') {
             
             return (
-                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 15, paddingTop: 10, }]}>
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 15, paddingTop: 10, }]} transitionConfig={() => ({screenInterpolator: CardStackStyleInterpolator.forVertical})}>
                     <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
                     </TouchableOpacity>
                     
@@ -57,7 +57,7 @@ export default class CustomNavBar extends React.Component {
                     
                     <View style={[styles.navBarItem, { flexDirection: 'row', justifyContent: 'flex-end' }]}>
                     
-                    <TouchableOpacity onPress={() => Actions.menu()} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]}>
+                    <TouchableOpacity onPress={() => Actions.menu()} style={[styles.navBarItem, { paddingLeft: 5, paddingTop:7 }]} transitionConfig={() => ({screenInterpolator: CardStackStyleInterpolator.forVertical})}>
                     <Image
                     style={{ width: 50, height: 70 }}
                     resizeMode="contain"
@@ -65,7 +65,7 @@ export default class CustomNavBar extends React.Component {
                     />
                     </TouchableOpacity>
                     
-                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 5, paddingTop: 7, }]}>
+                    <TouchableOpacity onPress={Actions.pop} style={[styles.navBarItem, { paddingLeft: 5, paddingTop: 7, }]} transitionConfig={() => ({screenInterpolator: CardStackStyleInterpolator.forVertical})}>
                     <Image style={{ width: 25, height: 30 }} resizeMode="contain" source={require('./assets/backicon.png')} />
                     </TouchableOpacity>
                     
