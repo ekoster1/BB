@@ -27,6 +27,7 @@ export default class Routes extends Component<{}> {
 import React, { Component } from 'react';
 import { View, Platform} from 'react-native';
 import {Actions, Router, Scene, Stack, Drawer, SideMenu} from 'react-native-router-flux';
+import CardStackStyleInterpolator from 'react-navigation';
 
 
 
@@ -65,7 +66,7 @@ export default class Routes extends Component {
           
              <Scene  key="login" component={LoginPage} title="Login" />
              <Scene key="profile" component={Profile} title="Profile" />
-             <Drawer key ="menu" component={Menu} title ="Menu" />
+             <Drawer key ="menu" component={Menu} transitionConfig={() => ({screenInterpolator: CardStackStyleInterpolator.forVertical})} title="Menu" />
              
              
              

@@ -3,11 +3,13 @@ import { Text, View, ScrollView, Header, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import {styles} from './Styles';
 
+
 export default class Menu extends Component {
     render(){
         return (
                 
                 <View style={styles.container}>
+               
                 <ScrollView>
                 <TouchableOpacity
                 style={styles.button}
@@ -59,8 +61,9 @@ export default class Menu extends Component {
                 </TouchableOpacity>
                 
                 </ScrollView>
-                
+
                 </View>
+                
                 );
     }
 };
