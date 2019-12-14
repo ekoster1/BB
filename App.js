@@ -30,12 +30,12 @@ export default class App extends React.Component {
   componentDidMount() {
     //initial configuration
     GoogleSignin.configure({
-      //It is mandatory to call this method before attempting to call signIn()
+     
       scopes: ['https://www.googleapis.com/auth/drive.readonly'],
-      // Repleace with your webClientId generated from Firebase console
+     
       webClientId: '719879273521-2orfbmq6rrjqq774n13ka4l184cpn1d9.apps.googleusercontent.com',
     });
-    //Check if user is already signed in
+  
     this._isSignedIn();
   }
 
@@ -43,10 +43,10 @@ export default class App extends React.Component {
     const isSignedIn = await GoogleSignin.isSignedIn();
     if (isSignedIn) {
       alert('User is already signed in');
-      //Get the User details as user is already signed in
+  
       this._getCurrentUserInfo();
     } else {
-      //alert("Please Login");
+     
       console.log('Please Login');
     }
     this.setState({ gettingLoginStatus: false });
@@ -69,11 +69,10 @@ export default class App extends React.Component {
   };
 
   _signIn = async () => {
-    //Prompts a modal to let the user sign in into your application.
+   
     try {
       await GoogleSignin.hasPlayServices({
-        //Check if device has Google Play Services installed.
-        //Always resolves to true on iOS.
+       
         showPlayServicesUpdateDialog: true,
       });
       const userInfo = await GoogleSignin.signIn();
@@ -94,18 +93,18 @@ export default class App extends React.Component {
   };
 
   _signOut = async () => {
-    //Remove user session from the device.
+   
     try {
       await GoogleSignin.revokeAccess();
       await GoogleSignin.signOut();
-      this.setState({ userInfo: null }); // Remove the user from your app's state as well
+      this.setState({ userInfo: null }); 
     } catch (error) {
       console.error(error);
     }
   };
 
   render() {
-    //returning Loader untill we check for the already signed in user
+    
     if (this.state.gettingLoginStatus) {
       return (
         <View style={styles.container}>
@@ -114,7 +113,7 @@ export default class App extends React.Component {
       );
     } else {
       if (this.state.userInfo != null) {
-        //Showing the User detail
+        
         return (
           <View style={styles.container}>
             <Image
@@ -133,7 +132,7 @@ export default class App extends React.Component {
           </View>
         );
       } else {
-        //For login showing the Signin button
+      
         return (
           <View style={styles.container}>
             <GoogleSigninButton
