@@ -167,6 +167,14 @@ const styles = StyleSheet.create({
         padding:10,
         resizeMode:'stretch',
     },
+                                 faceShapeImage: {
+                                 width: 55,
+                                 height: 85,
+                                 marginTop: 8,
+                                 marginBottom: 17,
+                                 padding:10,
+                                 resizeMode:'stretch',
+                                 },
                                
     safeArea: {
         flex: 1,
