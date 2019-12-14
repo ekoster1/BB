@@ -21,6 +21,8 @@ export default class EyeShape extends Component {
             }}>
             
         <ScrollView>
+            <Text style={styles.categoriesText}>Eye Shape</Text>
+            <Text style={styles.categoriesText}></Text>
             
           <View style={styles.facialContainer}>
             <TouchableOpacity
@@ -90,6 +92,7 @@ export default class EyeShape extends Component {
         </ScrollView>
       </View>
             </View>
+            
     );
   }
 };
