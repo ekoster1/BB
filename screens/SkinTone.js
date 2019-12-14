@@ -12,6 +12,7 @@ export default class SkinTone extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
+            <Text style={styles.categoriesText}>Skin Tone</Text>
           <View></View>
           <TouchableOpacity 
             style={styles.button}
