@@ -8,6 +8,7 @@ export default class CategoriesPage extends Component {
     return (
       <View style={styles.container}>
         <ScrollView>
+        <Text style={styles.categoriesText}>CATEGORIES</Text>
           <TouchableOpacity 
             style={styles.button}
             onPress={() => Actions.FaceShape()}
