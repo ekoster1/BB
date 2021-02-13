@@ -12,8 +12,13 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.2",
+    "react-native-dropdown-menu": "^2.0.0",
+    "react-native-fontawesome": "^7.0.0",
     "react-native-router-flux": "^4.0.6",
-    "react-native-webview": "^7.4.3"
+    "react-native-thumbnail-video": "^0.1.2",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-webview": "^7.4.3",
+    "react-navigation-fluid-transitions": "^0.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

@@ -1,20 +1,26 @@
 import React, { Component } from 'react';
 import { StyleSheet, SafeAreaView, FlatList, Text, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
-import {styles} from '../Styles';
+import {styles} from './Styles';
+import { Thumbnail } from 'react-native-thumbnail-video';
 
-const MAX_RESULT = 15;
+/** 
+ * const MAX_RESULT = 15;
 const PLAYLIST_ID = "PL6sCTSXxmmq-LhBdOA0O_bDm6imZIwJYR";
-const API_KEY = "API_KEY_placeholder";
+const API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
+*/
+MAX_RESULT = 15
+//PLAYLIST_ID = this.props.id;
+API_KEY = "AIzaSyAf73lQmeKdyMXNFamVIcvwQAteLKtpWcE";
 
-export default class Playlist extends Component<{}> {
-  
+export default class Playlist extends Component {
+
   playlist(){
     Actions.playlist();
   }
 
-  watchVideo(video_url){
-    Actions.watchvideo({video_url: video_url});
+  Video(video_url){
+    Actions.video({video_url: video_url});
   }
 
   componentWillMount() {
@@ -22,7 +28,7 @@ export default class Playlist extends Component<{}> {
   }
 
   fetchPlaylistData = async () => {
-    const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${PLAYLIST_ID}&maxResults=${MAX_RESULT}&part=snippet%2CcontentDetails&key=${API_KEY}`);
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?playlistId=${this.props.id}&maxResults=${MAX_RESULT}&part=snippet%2CcontentDetails&key=${API_KEY}`);
     const json = await response.json();
     this.setState({ videos: json['items']});
     console.log(this.state.videos)
@@ -46,13 +52,16 @@ export default class Playlist extends Component<{}> {
                 ({item}) =>
                 <TouchableOpacity
                     style={styles.demacate}
-                    onPress={() => this.watchVideo(item.contentDetails.videoId)}
-                >
+            onPress= {() => this.Video(item.contentDetails.videoId)} >
+
+
                 <Text
                   style={styles.item}
                 >
                 {item.snippet.title}
                 </Text>
+            <Thumbnail url={"https://www.youtube.com/watch?v="+item.contentDetails.videoId }
+            onPress ={() => this.Video(item.contentDetails.videoId)}/>
                 </TouchableOpacity>
               }
             />
@@ -60,3 +69,4 @@ export default class Playlist extends Component<{}> {
     );
   }
 }
+
